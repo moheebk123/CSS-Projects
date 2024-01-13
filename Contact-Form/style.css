@@ -1,0 +1,53 @@
+*{
+    border-radius: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.contact{
+    text-align: center;
+}
+
+.container{
+    background-color: rgba(65, 105, 225, 0.669);
+    width: 50%;
+    border: 1px solid;
+    border-color: #ccc;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.content{
+    margin-top: 0;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    background-color: #f6f6f6;
+}
+
+.name{
+    display: flex;
+}
+
+span{
+    color: red;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea{
+    padding: 8px;
+    margin: 8px;
+    margin-left: 0;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"]{
+    color: aliceblue;
+    width: 100%;
+    background-color: dodgerblue;
+}
+
+input[type="submit"]:hover{
+    background-color:rgb(40, 115, 255);
+}
