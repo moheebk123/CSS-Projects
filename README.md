@@ -20,7 +20,7 @@ This repository contains a collection of mini projects which I had created using
     <tr>
         <td>Contact-Page</td>
         <td><a href="https://github.com/moheebk123/ContactPage">Code</a></td>
-        <td><a href="moheeb-khan-contact-page.vercel.app">Link</a></td>
+        <td><a href="https://moheeb-khan-contact-page.vercel.app">Link</a></td>
     </tr>
     <tr>
         <td>Icon-Hover</td>
