@@ -72,6 +72,6 @@ This repository contains a collection of mini projects which I had created using
             Dashboard
         </td>
         <td><a href="https://github.com/moheebk123/Dashboard-Bootstrap">Code</a></td>
-        <td><a href="https://github.com/moheeb-khan-dashboard-boostrap.vercel.app">Link</a></td>
+        <td><a href="https://github.com/moheeb-khan-dashboard-bootstrap.vercel.app">Link</a></td>
     </tr>
 </table>
