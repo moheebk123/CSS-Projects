@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&family=Roboto:wght@400;700&display=swap');
+
+/* Utility Section */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--accent-color);
+    border-radius: 15px;
+}
+
+body{
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+color: var(--primary-text-color);
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: var(--primary-text-color);
+    transition: 0.2s ease;
+}
+
+a:hover{
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+.banner-text{
+    text-align: center;
+    color: white;
+    padding: 15px 30px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container{
+    overflow: hidden;
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+.primary-button{
+    padding: 12px 24px !important;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 6px;
+    color: var(--primary-text-color);
+    padding: 12px 24px;
+}
+
+.primary-button:hover{
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.secondary-button{
+    width: fit-content;
+    padding: 12px 24px !important;
+    background: var(--accent-color);
+    color: white !important;
+    border-radius: 6px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+}
+
+.secondary-button:hover{
+    background: var(--accent-color-dark);
+}
+
+i{
+    color: var(--accent-color);
+}
+
+.gap{
+    margin-bottom: 1em;
+}
+
+.logo img{
+    width: 175px;
+}
+
+
+/* Top Banner */
+
+.top-banner{
+    background-color: #4fb3d4;
+    background-size: 300px;
+    background-image: url('./assets/asset\ 32.png');
+}
+
+
+/* Navbar */
+
+
+nav .container{
+    justify-content: space-between;
+    cursor:default;
+    padding: 25px  10px;
+    overflow: initial;
+}
+
+nav .container .navlink a{
+    padding-inline: 10px;
+    margin-inline: 3px;
+}
+
+nav .container .navlink a.dropdown{
+    position: relative;
+    transition: 0.3s ease;
+}
+
+nav .container .navlink a .dropdown-navLink{
+    width: max-content;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1em;
+    color: var(--primary-text-color);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 3px rgba(0,0,0,.1);
+    transition: 0.3s ease;
+}
+
+nav .container .navlink a .dropdown-navLink div{
+    padding: 0.8em 0.5em;
+}
+
+nav .container .navlink a .dropdown-navLink div:hover{
+    color: var(--accent-color);
+}
+
+nav .container .navlink a.dropdown:hover .dropdown-navLink{
+    display: block;
+}
+
+nav .container .navbar{
+    display: none;
+}
+
+
+/* Hero Section */
+
+header{
+    padding: 35px var(--padding-inline-section);
+}
+
+header .container{
+    justify-content: space-between;
+    gap: 5em;
+}
+
+header .container .image img{
+    width: 100%;
+}
+
+header .container .content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: max-content;
+}
+
+header .container .content .get-started{
+    width: max-content;
+    padding: 15px 30px;
+}
+
+
+/* Companies Section */
+
+.companies-section{
+    margin-top: 5em;
+    color: var(--secondary-text-color);
+}
+
+.companies-section .container h4{
+    width: max-content;
+    margin: auto;
+}
+
+.companies-section .container .companies-images{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1em 0px;
+}
+
+.companies-section .container .companies-images img{
+    height: 46px;
+    margin-inline: 1em;
+}
+
+
+/* Features Section */
+
+.features-section{
+    margin-top: 8em;
+    padding: 3em;
+    text-align: center;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./assets/asset\ 34.svg);
+
+}
+
+.features-section .container .content{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.features-section .container .content .box{
+    width: 28%;
+    margin-block: 20px;
+}
+
+.features-section .container .content .box img{
+    width: 40px;
+}
+
+
+/* Big Features Section */
+
+.big-feature-section .big-feature-container{
+    margin-top: 5em;
+}
+
+.big-feature-section{
+    padding: 35px var(--padding-inline-section);
+}
+
+.big-feature-section .container{
+    gap: 5em;
+    justify-content: space-between;
+}
+
+.big-feature-section .container .image img{
+    width: 100%;
+}
+
+.big-feature-section .container .content{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.big-feature-section .container .content .company-image{
+    height: 30px;
+}
+
+.big-feature-section .container .content .box img{
+    height: 3em;
+    margin-right: 1em;
+}
+
+.big-feature-section .container .content .background-image{
+    background-repeat: no-repeat;
+    background-image: url(./assets/asset\ 35.svg);
+}
+
+
+/* Examples Section */
+
+.examples-section .container{
+    text-align: center;
+    margin-block: 4em;
+}
+
+.examples-section .container a{
+    margin-top: 1.1em;
+}
+
+.examples-section .container .content{
+    flex-wrap: wrap;
+    margin-top: 1em;
+    gap: 1em;
+    justify-content: space-evenly;
+}
+
+.examples-section .container .content .example{
+    position: relative;
+    width: 23%;
+    height: 40vh;
+    background: linear-gradient( rgb(0, 0, 0, 0.2) , rgb(0, 0, 0, 0.9)), url(./assets/asset\ 36.jpeg);
+    background-size: 100% 100%;
+}
+
+.examples-section .container .content .example:nth-child(2){
+    background: linear-gradient( rgb(0, 0, 0, 0.2) , rgb(0, 0, 0, 0.9)), url(./assets/asset\ 37.jpeg);
+    background-size: 100% 100%;
+}
+
+.examples-section .container .content .example:nth-child(3){
+    background: linear-gradient( rgb(0, 0, 0, 0.2) , rgb(0, 0, 0, 0.9)), url(./assets/asset\ 38.jpeg);
+    background-size: 100% 100%;
+}
+
+.examples-section .container .content .example:nth-child(4){
+    background: linear-gradient( rgb(0, 0, 0, 0.2) , rgb(0, 0, 0, 0.9)), url(./assets/asset\ 39.jpeg);
+    background-size: 100% 100%;
+}
+
+.examples-section .container .content .example:hover{
+    box-shadow: 0 0 10px 3px #888;
+}
+
+.examples-section .content .example h3{
+    color: white;
+    position: absolute;
+    text-align: left;
+    bottom: 15px;
+    left: 15px;
+}
+
+
+/* CTA Section */
+
+.cta-section{
+    background: var(--primary-text-color);
+    padding: 35px var(--padding-inline-section);
+}
+
+.cta-section .container{
+    justify-content: space-between;
+}
+
+.cta-section .container .content{
+    width: 50vw;
+}
+
+.cta-section .container .content ul{
+    flex-wrap: wrap;
+}
+
+.cta-section .container .content ul li{
+    width: 43%;
+    margin-inline: 10px;
+}
+
+.cta-section .container .content h2{
+    font-size: 2.5rem;
+}
+
+.cta-section .container .content h2, .cta-section .container .content h4{
+    color: white;
+}
+
+.cta-section .container .content li, .cta-section .container .content p{
+    color: #aac4db;
+}
+
+.cta-section .container .image-section{
+    justify-content: center;
+    align-items: center;
+    width: 55vw;
+    height: 70vh;
+    background-size: 100% 100%;
+    background-image: url(./assets/asset\ 40.png);
+}
+
+.cta-section .container .image-section .text{
+    width: 100%;
+    height: 100%;
+    background-size: 45%;
+    margin-top: 3em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./assets/asset\ 41.png);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-section .container .image-section .text h3{
+    color: var(--primary-text-color);
+}
+
+.cta-section .container .image-section .text p{
+    color: var(--secondary-text-color);
+    font-weight: bolder;
+}
+
+.cta-section .container .image-section .text p span{
+    color: var(--accent-color);
+}
+
+
+
+/* Start Section */
+
+.start-section .container{
+    text-align: center;
+    margin-block: 8em;
+}
+
+.start-section .container p{
+    margin-top: 2em;
+}
+
+.start-section .container a{
+    margin-top: 1.5em;
+}
+
+
+/* Footer */
+
+footer{
+    background: #ebf2fa;
+}
+
+footer .container{
+    justify-content: space-between;
+    padding-block: 5em;
+    
+}
+
+footer .container .logo{
+    align-self: flex-start;
+    margin-block: 0.5em;
+}
+
+footer .container h3{
+    font-size: 1.23em;
+    margin-block: 0.5em;
+}
+
+footer .container p{
+    font-size: 1.08em;
+}
+
+footer .container p a{
+    color: var(--secondary-text-color);
+}
+
+
+/* Sub Footer */
+
+.subfooter{
+    background: #b9cde4;
+}
+
+.subfooter .container{
+    padding: 20px ;
+    justify-content: center;
+}
+
+.subfooter .container div{
+    justify-content: center;
+    margin-inline: 3.3em;
+}
+
+.subfooter .container div a{
+    margin-inline: 10px;
+}
+
+.subfooter .container .social-links a i,
+nav .container .navlink a i{
+    color: var(--secondary-text-color);
+}
+
+@media screen and (max-width: 991px) {
+
+    nav .container .navbar{
+        display: block;
+    }
+
+    nav .container{
+        position: relative;
+        overflow: initial;
+    }
+
+    nav .container .navlink{
+        background-color: white;
+        justify-content: space-evenly;
+        align-items: space-evenly;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        height: 70vh;
+        transition: 0.3s ease-in-out;
+    }
+
+    nav .container .navlink .dropdown:hover{
+        text-align: center;
+    }
+
+    nav .container .navlink a .dropdown-navLink{
+        position: relative;
+        border-radius: 0px;
+        box-shadow: none;
+        width: 90vw;
+        top: 0;
+        text-align: center;
+    }
+
+    nav .container .navlink.active{
+        left: 0;
+    }
+
+    .cta-section .container .image-section{
+        height: 60vh;
+    }
+
+    .cta-section .container .image-section .text h4,
+    .cta-section .container .image-section .text p{
+        font-size: 15px;
+    }
+
+    .examples-section .container .content .example{
+        width: calc(50% - 0.5em);
+        height: 23vh;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .features-section{
+        background-image: none;
+    }
+    
+    .features-section .container .content .box{
+        width: 50%;
+    }
+
+    .flex-direction{
+        flex-direction: column;
+    }
+    
+    #big-feature-section,
+    .cta-section .container,
+    header .container{
+        flex-direction: column-reverse;
+    } 
+    
+    header .container .content, 
+    .secondary-button,footer .container,
+    footer .container .logo,
+    .cta-section .container .content
+    {
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cta-section .container .content ul li{
+        text-align: left;
+    }
+
+    .cta-section .container .content,
+    .cta-section .container .image-section
+    {
+        width: 100%;
+        height: max-content;
+    }
+
+    .cta-section .container .image-section{
+        height: 65vh;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    h3{
+        font-size: 1.3rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+
+    .features-section .container .content .box,
+    .examples-section .container .content .example,
+    .cta-section .container .content ul li{
+        width: calc(100% - 0.5em);
+    }
+
+    .subfooter .container{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cta-section .container .content{
+        height: max-content;
+    }
+
+}
+
+

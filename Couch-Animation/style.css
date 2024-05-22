@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+p,h2{
+    font-weight: 300;
+}
+h3{
+    font-weight: 400;
+}
+body{
+    background: #e7e7e7;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+    .container{
+        background: #fff;
+        display: flex;
+        width: 88vw;
+        height: 65vh;
+        border-radius: 2em;
+        overflow: hidden;
+
+        @media screen and (max-width: 770px){
+            &{
+                flex-direction: column;
+                gap: 14em;
+                height: fit-content;
+            }
+        }
+        
+        & .animation{
+            position: relative;
+            height: 100%;
+            width: 50%;
+            
+            @media screen and (max-width: 770px){
+                &{
+                    width: 100%;
+                }
+            }
+            
+            & .title{
+                top: 15%;
+                left: 13%;
+                position: absolute;
+                z-index: 2;
+                width: 2.7em;
+                overflow: hidden;
+                color: #fff;
+                font-weight: 700;
+                font-size: 55px;
+                display: flex;
+                gap: 1em;
+                
+                @media screen and (max-width: 770px){
+                    &{
+                        top: 9vh;
+                        left: 31vw;
+                    }
+                }
+                
+                & div{
+                    animation: title 9s ease infinite;
+                    @media screen and (max-width: 770px){
+                        &{
+                            /* font-weight: 400; */
+                            font-size: 38px;
+                        }
+                    }
+
+                }
+            }
+            
+            & .blob{
+                z-index: 1;
+                width: 130%;
+                position: absolute;
+                top: -30%;
+                left: -40%;
+                animation: rotate 9s ease-in-out infinite;
+                
+                @media screen and (max-width: 770px){
+                    width: 47%;
+                    top: 2vh;
+                    left: 22vw;
+                }
+            }
+
+            & .items{
+                display: flex;
+                justify-content: flex-end;
+                align-items: end;
+                flex-direction: column;
+                width: 200%;
+                height: 150%;
+                padding: 1em;
+                top: -60%;
+                left: -120%;
+                position: absolute;
+                z-index: 3;
+                animation: sofa-cake 9s ease-in-out infinite;
+
+                
+                @media screen and (max-width: 1440px){
+                    &{
+                        left: -105%;
+                    }
+                }
+                @media screen and (max-width: 1024px){
+                    &{
+                        left: -105%;
+                    }
+                }
+                @media screen and (max-width: 770px){
+                    &{
+                        display: none;
+                    }
+                }
+
+                & img{
+                    height: 6.3em;
+                    width: 7em;
+                    margin-right: 6em;
+                }
+
+                & .house-item{
+                    margin-right: 0;
+                    width: 21em;
+                    height: 20em;
+
+                    @media screen and (max-width: 1024px) {
+                        width: 14em;
+                        height: 13em;
+                    }
+                }
+            }
+        }
+        
+        & .content{
+            width: 50%;
+            padding: 2em;
+            @media screen and (max-width: 770px){
+                &{
+                    width: 93%;
+                }
+            }
+
+            & div{
+                display: flex;
+                justify-content: flex-end;
+                & img{
+                    width: 2.5em;
+
+                    @media screen and (max-width: 770px){
+                        &{
+                            margin-right: 1em;
+                        }
+                    }
+                }
+            }
+
+            & h1{
+                line-height: 1.3em;
+                font-size: 2.5em;
+                font-weight: 300;
+            }
+
+            & .product{
+                display: flex;
+                justify-content: space-between;
+                
+                & .product-list{
+                    width: 90%;
+                    height: 34vh;
+                    gap: 3em;
+                    flex-direction: column;
+                    overflow: hidden;
+
+                    & .list{
+                        flex-direction: column;
+                        width: 100%;
+                        gap: 2.5em;
+                        animation: list 9s ease-in-out infinite;
+
+                        & .list-item{
+                            justify-content: space-around;
+                            gap: 4em;
+
+                            & h3{
+                                width:8em;
+                            } 
+                            & p{
+                                width: max-content;
+                            }
+                            & img{
+                                height: 60px;
+                            }
+                        }
+                    }
+                }
+
+                & .add-product{
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    width: 5%;
+                    padding-top: 10px;
+                    gap: 4.5em;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+@keyframes rotate{
+    0% {
+        transform: rotate(10deg);
+        /* purple */
+        filter: hue-rotate(215deg);
+    }
+    33% {
+        transform: rotate(130deg);
+        /* yellow */
+        filter: hue-rotate(360deg) saturate(100%);
+    }
+    66%{
+        transform: rotate(250deg);
+        /* green */
+        filter: hue-rotate(100deg) saturate(100%);
+    }
+    100%{
+        transform: rotate(370deg);
+        /* purple */
+        filter: hue-rotate(215deg);
+    }
+}
+@keyframes sofa-cake{
+    0% {
+        transform: rotate(0);
+    }
+    33% {
+        transform: rotate(130deg);
+    }
+    66%{
+        transform: rotate(250deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes blob-sofa{
+    0% {
+        transform: rotate(-130deg);
+    }
+    33% {
+        transform: rotate(0);
+    }
+    66%{
+        transform: rotate(130deg);
+    }
+    100%{
+        transform: rotate(250deg);
+    }
+}
+@keyframes herb-pods{
+    0% {
+        transform: rotate(-250deg);
+    }
+    33% {
+        transform: rotate(-130deg);
+    }
+    66%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(130deg);
+    }
+}
+@keyframes title{
+    0%,100%{
+        transform: translateX(0.2em);
+    }
+    33%{
+        transform: translateX(-3.5em);
+    }
+    66%{
+        transform: translateX(-6.8em);
+    }
+}
+@keyframes list{
+    0%,100%{
+        transform: translateY(225%);
+    }
+    33%{
+        transform: translateY(107%);
+    }
+    66%{
+        transform: translateY(-10%);
+    }
+}
