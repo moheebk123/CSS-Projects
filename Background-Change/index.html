@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Background Change</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <a href="">Home</a>
+        </div>
+        <div class="content">
+            <a href="">About</a>
+        </div>
+        <div class="content">
+            <a href="">Features</a>
+        </div>
+        <div class="content">
+            <a href="">Contact</a>
+        </div>
+        <div class="cursor"></div>
+    </div>
+
+    <script>
+        let cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px';
+        });
+    </script>
+</body>
+</html>

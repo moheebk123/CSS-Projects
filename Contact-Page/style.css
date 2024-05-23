@@ -1,0 +1,139 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    font-weight: 550;
+}
+.container{
+    margin: 5px;
+}
+.container .navbar{
+    display: flex;
+    border-bottom: 2px solid #ccc;
+}
+.container .navbar .logo{
+    padding: 5px;
+    margin-left: 5rem;
+    font-weight: 1000;
+    font-size: 20px;
+    font-style: oblique;
+    color: rgb(0, 137, 191);
+}
+.container .navbar .navbar_left{
+    display: flex;
+    width: 50%;
+    margin-left: 5rem;
+}
+.container .navbar .navbar_left a{
+    padding: 5px;
+    padding-left: 40px;
+    color: rgba(0, 0, 0, 0.785);
+}
+.container .navbar .navbar_right{
+    display: flex;
+    margin-left: 10rem;
+}
+.container .navbar .navbar_right a{
+    padding: 5px;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.785);
+}
+.container .nav a{
+    padding-left: 40px;
+    color: rgba(0, 0, 0, 0.785);
+}
+
+.container .nav{
+    text-align: center;
+    padding: 10px;
+}
+.container .contact{
+    background-color: rgb(0, 137, 191);
+}
+h1{
+    color: rgba(0, 191, 255, 0.936);
+    font-size: 50px
+}
+h4{
+    color: white;
+}
+.container .contact .navigation{
+    display: flex;
+    padding: 10px;
+    background-color:deepskyblue;
+}
+.container .contact .navigation a{
+    padding: 10px;
+    color: #fff;
+}
+.container .contact .navigation .help{
+    margin-left: 7rem;
+    width:74%;
+}
+.container .contact .contact_us{
+    text-align: center;
+    height: 130px;
+    background-color: rgb(0, 137, 191);
+}
+.container .content{
+    width: 48%;
+    margin: auto;
+}
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+legend,textarea{
+    width: 97%;
+    padding: 3px;
+    margin: 3px;
+    border-color: #ccc;
+    border-radius: 5px;
+}
+input[type="submit"]{
+    margin-bottom: 10px;
+    width: 10%;
+    background-color: rgb(0, 137, 191);
+    color: #fff;
+    height: 2.5rem;
+    font-weight: 550;
+}
+.footer{
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    background-color: #eee;
+    padding: 5px;
+    display: flex;
+}
+.footer a{
+    color: rgb(0, 137, 191);
+}
+.footer 
+.seo_tools, 
+.local_marketing, 
+.marketing_resources, 
+.moz_solutions, 
+.moz_top{
+    width: 20%;
+    padding: 9px;
+    padding-left: 5rem;
+    text-align: justify;
+}
+.footer 
+.seo_tools_item, 
+.local_marketing_item, 
+.marketing_resources_item, 
+.moz_solutions_item{
+    padding: 2px;
+}
+.footer .moz_top{
+    border-left: 2px solid #ccc;
+    padding-left: 15px;
+}
+button[type="submit"]{
+    height: 2rem;
+    border-radius: 5px;
+    border-color: #ccc;
+    background-color:deepskyblue;
+}
+footer .copyright p{
+    text-align:right;
+}

@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: #2e364a;
+    position: relative;
+    width: 77vw;
+    height: 250vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20em;
+    justify-content: center;
+    align-items: flex-start;
+
+    .timeline{
+        padding: 10px 50px;
+        position: relative;
+        width: 35%;
+        padding-bottom: 50px;
+
+
+        & img{
+            width: 60px;
+            background: #fff;
+            position: absolute;
+            border-radius: 50%;
+            padding: 10px;
+            top: 5%;
+            z-index: 1;
+        }
+
+        .text-box{
+            padding: 20px ;
+            background: #fff;
+            position: relative;
+            border-radius: 6px;
+            font-size: 15px;
+
+            .box-arrow{
+                height: 0;
+                width: 0;
+                position: absolute;
+                top: 7%;
+                z-index: 1;
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;
+            }
+
+            .right-box-arrow{
+                border-right: 15px solid #fff;
+                right: 100%;
+            }
+
+            .left-box-arrow{
+                left: 100%;
+                border-left: 15px solid #fff;
+            }
+        }
+    }
+
+    .left-box{
+        left: 0;
+
+        &::after{
+            content: '';
+            width: 5px;
+            height: 100%;
+            background: #fff;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+
+        & img{
+            right: -6.7%;
+        }
+    }
+
+    .right-box{
+        left: 34.6%;
+
+
+        &::after{
+            content: '';
+            width: 5px;
+            height: 100%;
+            background: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        & img{
+            left: -6.5%;
+        }
+    }
+}
