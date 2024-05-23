@@ -9,12 +9,12 @@ body {
   position: relative;
   padding-block: 2em;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   gap: 1em;
   place-content: center;
   background: #002339;
-  overflow: hidden;
+  overflow-x: hidden;
 
   & > h1 {
     color: #fff;
@@ -23,166 +23,80 @@ body {
 
   & #container {
     padding: 1em;
-    max-width: 1200px;
     width: 100vw;
+    max-width: 1200px;
+    height: max-content;
     display: flex;
-    gap: 2em;
+    flex-wrap: wrap;
+    gap: 3em;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-
-    height: 140vmax;
-    width: 140vmax;
-    position: absolute;
-
-    & .card-wrapper {
-      border-radius: 1vmax;
-      position: absolute;
-      overflow: hidden;
-      transition: transform 0.3s ease;
-      &:hover {
-        transform: scale(1.1);
-
-        & .card {
-          opacity: 1;
-        }
-      }
-
-      &:nth-child(1) {
-        background-color: rgb(255, 238, 88);
-        top: 20%;
-        left: 5%;
-      }
-
-      &:nth-child(2) {
-        background-color: rgb(66, 165, 245);
-        top: 17%;
-        left: 40%;
-      }
-
-      &:nth-child(3) {
-        background-color: rgb(239, 83, 80);
-        top: 20%;
-        left: 75%;
-      }
-
-      &:nth-child(4) {
-        background-color: rgb(102, 187, 106);
-        top: 36%;
-        left: 5%;
-      }
-
-      &:nth-child(5) {
-        background-color: rgb(174, 0, 255);
-        top: 32%;
-        left: 40%;
-      }
-
-      &:nth-child(6) {
-        background-color: rgb(255, 167, 38);
-        top: 36%;
-        left: 75%;
-      }
-
-      &:nth-child(7) {
-        background-color: rgb(63, 81, 181);
-        top: 52%;
-        left: 5%;
-      }
-
-      &:nth-child(8) {
-        background-color: rgb(141, 110, 99);
-        top: 47%;
-        left: 40%;
-      }
-
-      &:nth-child(9) {
-        background-color: rgb(250, 250, 250);
-        top: 52%;
-        left: 75%;
-      }
-
-      &:nth-child(10) {
-        background-color: rgb(255, 0, 157);
-        top: 68%;
-        left: 5%;
-      }
-
-      &:nth-child(11) {
-        background-color: rgb(207, 253, 0);
-        top: 62%;
-        left: 40%;
-      }
-
-      &:nth-child(12) {
-        background-color: rgb(0, 255, 179);
-        top: 68%;
-        left: 75%;
-      }
-
-      &:nth-child(13) {
-        background-color: rgb(0, 0, 0);
-        top: 83%;
-        left: 5%;
-      }
-
-      &:nth-child(14) {
-        background-color: rgb(0, 255, 13);
-        top: 77%;
-        left: 40%;
-      }
-
-      &:nth-child(15) {
-        background-color: rgb(0, 247, 255);
-        top: 83%;
-        left: 75%;
-      }
-    }
 
     & .card {
-      background-color: #fff;
+      border-radius: 2rem;
       width: 320px;
-      height: max-content;
+      height: 350px;
       overflow: hidden;
-      opacity: 0;
-      transition: opacity 800ms ease, transform 800ms ease;
+      position: relative;
+      transition: 0.5s ease;
 
-      & .image-box {
-        width: 100%;
-        height: 150px;
+      &:hover {
+        cursor: pointer;
+        scale: 1.1;
+        border-radius: 1rem;
 
-        & img {
-          width: 100%;
-          height: 100%;
+        & .bottom {
+          top: 50%;
+        }
+
+        & .top {
+          background-color: #00000018;
         }
       }
 
-      & :is(h2, p, .link-box) {
-        padding: 10px;
+      & .top {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: multiply;
       }
 
-      & .link-box {
-        padding: 15px;
-        padding-bottom: 30px;
+      & .bottom {
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 1em;
+        background-color: #ffffffa9;
         display: flex;
-        gap: 1em;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: top 0.5s ease;
 
-        & a {
-          text-decoration: none;
+        & .link-box {
+          display: flex;
+          gap: 1em;
 
-          & button {
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
-              rgba(0, 0, 0, 0.23) 0px 3px 6px;
-            padding: 10px 3em;
-            background-color: rgb(0, 162, 255);
-            color: #fff;
-            border: none;
-            outline: none;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            cursor: pointer;
+          & a {
+            text-decoration: none;
+
+            & button {
+              box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+                rgba(0, 0, 0, 0.23) 0px 3px 6px;
+              padding: 10px 3em;
+              background-color: rgb(0, 162, 255);
+              color: #fff;
+              border: none;
+              outline: none;
+              border-radius: 8px;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              cursor: pointer;
+            }
           }
         }
       }
@@ -197,6 +111,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1em;
+
+    @media (max-width: 600px) {
+      top: 3.5em;
+    }
 
     & .meta-link {
       align-items: center;

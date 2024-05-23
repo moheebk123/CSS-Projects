@@ -65,26 +65,26 @@ const data = [
 
 const cardHTML = (title, description, imgUrl, codeLink, liveLink) => {
   return `<div class="card-wrapper">
-        <div class="card">
-          <div class="image-box">
-            <img src="${imgUrl}" alt="Project Image" />
-          </div>
-          <h2>${title}</h2>
-          <p>${description}</p>
-          <div class="link-box">
-            <a href=${codeLink} target="_blank">
-              <button type="button">
-                <i class="fa-solid fa-code"></i> Code
-              </button>
-            </a>
-            <a href=${liveLink} target="_blank">
-              <button type="button">
-                <i class="fa-solid fa-link"></i> Live
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>`;
+  <div class="card">
+    <div class="top" style="background-image: url(${imgUrl});"></div>
+    <div class="bottom">
+    <h2>${title}</h2>
+    <p>${description}</p>
+    <div class="link-box">
+      <a href=${codeLink} target="_blank">
+        <button type="button">
+          <i class="fa-solid fa-code"></i> Code
+        </button>
+      </a>
+      <a href=${liveLink} target="_blank">
+        <button type="button">
+          <i class="fa-solid fa-link"></i> Live
+        </button>
+      </a>
+    </div>
+    </div>
+  </div>
+</div>`;
 };
 
 data.forEach((cardData) => {
@@ -96,28 +96,3 @@ data.forEach((cardData) => {
   const card = cardHTML(title, description, imgUrl, codeLink, liveLink);
   container.insertAdjacentHTML("beforeend", card);
 });
-
-window.onmousemove = (e) => {
-  const mouseX = e.clientX,
-    mouseY = e.clientY;
-
-  const xDecimal = mouseX / window.innerWidth,
-    yDecimal = mouseY / window.innerHeight;
-
-  const maxX = container.offsetWidth - window.innerWidth,
-    maxY = container.offsetHeight - window.innerHeight;
-
-  const panX = maxX * xDecimal * -1,
-    panY = maxY * yDecimal * -1;
-
-  container.animate(
-    {
-      transform: `translate(${panX}px, ${panY}px)`,
-    },
-    {
-      duration: 4000,
-      fill: "forwards",
-      easing: "ease",
-    }
-  );
-};
