@@ -59,7 +59,8 @@ const data = [
   },
   {
     title: "Dashboard",
-    description: "User Dashboard panel for business to manage accounts. Build using Bootstrap.",
+    description:
+      "User Dashboard panel for business to manage accounts. Build using Bootstrap.",
   },
 ];
 
@@ -72,12 +73,12 @@ const cardHTML = (title, description, imgUrl, codeLink, liveLink) => {
     <div class="link-box">
       <a href=${codeLink} target="_blank">
         <button type="button">
-          <i class="fa-solid fa-code"></i> Code
+         Code
         </button>
       </a>
       <a href=${liveLink} target="_blank">
         <button type="button">
-          <i class="fa-solid fa-link"></i> Live
+           Live
         </button>
       </a>
     </div>
