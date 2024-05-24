@@ -64,8 +64,7 @@ const data = [
 ];
 
 const cardHTML = (title, description, imgUrl, codeLink, liveLink) => {
-  return `<div class="card-wrapper">
-  <div class="card">
+  return `<div class="card">
     <div class="top" style="background-image: url(${imgUrl});"></div>
     <div class="bottom">
     <h2>${title}</h2>
@@ -84,7 +83,7 @@ const cardHTML = (title, description, imgUrl, codeLink, liveLink) => {
     </div>
     </div>
   </div>
-</div>`;
+`;
 };
 
 data.forEach((cardData) => {
