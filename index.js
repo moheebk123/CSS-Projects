@@ -29,7 +29,7 @@ const data = [
     description: "Image expand's when hover.",
   },
   {
-    title: "Text-in-Video",
+    title: "Video-in-Text",
     description: "Background video in text.",
   },
   {
