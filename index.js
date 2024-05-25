@@ -71,14 +71,10 @@ const cardHTML = (title, description, imgUrl, codeLink, liveLink) => {
     <p>${description}</p>
     <div class="link-box">
       <a href=${codeLink} target="_blank">
-        <button type="button">
-          <i class="fa-solid fa-code"></i> Code
-        </button>
+        <button type="button">Code</button>
       </a>
       <a href=${liveLink} target="_blank">
-        <button type="button">
-          <i class="fa-solid fa-link"></i> Live
-        </button>
+        <button type="button">Live</button>
       </a>
     </div>
     </div>
