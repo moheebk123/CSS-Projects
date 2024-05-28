@@ -85,7 +85,7 @@ const cardHTML = (title, description, imgUrl, codeLink, liveLink) => {
 data.forEach((cardData) => {
   const title = cardData.title;
   const description = cardData.description;
-  const imgUrl = `./assets/${cardData.title}.png`;
+  const imgUrl = `./assets/${cardData.title}.webp`;
   const codeLink = `https://github.com/moheebk123/HTML-CSS-Projects/tree/main/${cardData.title}`;
   const liveLink = `./${cardData.title}/index.html`;
   const card = cardHTML(title, description, imgUrl, codeLink, liveLink);
