@@ -87,7 +87,7 @@ data.forEach((cardData) => {
   const description = cardData.description;
   const imgUrl = `./assets/${cardData.title}.webp`;
   const codeLink = `https://github.com/moheebk123/HTML-CSS-Projects/tree/main/${cardData.title}`;
-  const liveLink = `./${cardData.title}/index.html`;
+  const liveLink = `./${cardData.title}/`;
   const card = cardHTML(title, description, imgUrl, codeLink, liveLink);
   container.insertAdjacentHTML("beforeend", card);
 });
