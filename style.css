@@ -16,7 +16,7 @@ body {
   background: #002339;
   overflow-x: hidden;
 
-  & > h1 {
+  &>h1 {
     color: #fff;
     text-align: center;
   }
@@ -136,30 +136,14 @@ body {
         border: 1px solid rgba(255, 255, 255, 0.2);
       }
 
-      & i {
-        font-size: 25px;
-
-        &.fa-github {
-          color: #fff;
-          background-color: #000;
-          border-radius: 50%;
-          -webkit-border-radius: 50%;
-          -moz-border-radius: 50%;
-          -ms-border-radius: 50%;
-          -o-border-radius: 50%;
-        }
-
-        &.fa-linkedin {
-          color: rgb(0, 162, 255);
-          background-color: #fff;
-          border-radius: 6px;
-          padding-top: 2px;
-          padding-inline: 2px;
-          overflow: hidden;
-        }
+      &>img {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        object-fit: cover;
       }
 
-      & > span {
+      &>span {
         color: white;
         font-weight: 500;
       }
