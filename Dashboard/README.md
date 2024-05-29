@@ -1,3 +1,3 @@
 # Dashboard-Bootstrap
 Dashboard created using HTML, CSS, Bootstrap
-<img src="./assets/photo.png"/>
+<img src="../assets/Dashboard.webp" alt="Project Image" />
