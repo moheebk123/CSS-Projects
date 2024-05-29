@@ -16,7 +16,7 @@ body {
   background: #002339;
   overflow-x: hidden;
 
-  &>h1 {
+  & > h1 {
     color: #fff;
     text-align: center;
   }
@@ -25,7 +25,7 @@ body {
     padding-block: 1em;
     text-align: center;
 
-    &>a {
+    & > a {
       color: #fff;
       text-decoration: none;
       backdrop-filter: blur(3px);
@@ -125,7 +125,7 @@ body {
     }
   }
 
-  & .social-link {
+  & .social-link-box {
     position: fixed;
     top: 1em;
     right: 1em;
@@ -134,11 +134,11 @@ body {
     flex-direction: column;
     gap: 1em;
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       top: 3.5em;
     }
 
-    & .meta-link {
+    & .social-link {
       align-items: center;
       backdrop-filter: blur(3px);
       background-color: rgba(255, 255, 255, 0.155);
@@ -158,16 +158,22 @@ body {
         border: 1px solid rgba(255, 255, 255, 0.2);
       }
 
-      &>img {
+      & > img {
         height: 35px;
         width: 35px;
-        border-radius: 50%;
-        object-fit: cover;
+
+        &.linkedin-logo {
+          border-radius: 5px;
+        }
       }
 
-      &>span {
+      & > span {
         color: white;
         font-weight: 500;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
     }
   }
