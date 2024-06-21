@@ -37,6 +37,10 @@ const data = [
     description: "3D list with hover effect.",
   },
   {
+    title: "Splash-Image",
+    description: "Splash Image.",
+  },
+  {
     title: "Timeline",
     description: "Timeline with cool animation for experience section.",
   },
