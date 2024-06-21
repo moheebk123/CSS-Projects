@@ -1,5 +1,4 @@
-const container = document.getElementById("container");
-const data = [
+const Data = [
   {
     title: "Contact-Form",
     description: "Simple contact form for user details.",
@@ -63,35 +62,9 @@ const data = [
   },
   {
     title: "Dashboard",
-    description: "User Dashboard panel for business to manage accounts. Build using Bootstrap.",
+    description:
+      "User Dashboard panel for business to manage accounts. Build using Bootstrap.",
   },
 ];
 
-const cardHTML = (title, description, imgUrl, codeLink, liveLink) => {
-  return `<div class="card">
-    <div class="top" style="background-image: url(${imgUrl});"></div>
-    <div class="bottom">
-    <h2>${title}</h2>
-    <p>${description}</p>
-    <div class="link-box">
-      <a href=${codeLink} target="_blank">
-        <button type="button">Code</button>
-      </a>
-      <a href=${liveLink} target="_blank">
-        <button type="button">Live</button>
-      </a>
-    </div>
-    </div>
-  </div>
-`;
-};
-
-data.forEach((cardData) => {
-  const title = cardData.title;
-  const description = cardData.description;
-  const imgUrl = `./assets/${cardData.title}.webp`;
-  const codeLink = `https://github.com/moheebk123/HTML-CSS-Projects/tree/main/${cardData.title}`;
-  const liveLink = `./${cardData.title}/`;
-  const card = cardHTML(title, description, imgUrl, codeLink, liveLink);
-  container.insertAdjacentHTML("beforeend", card);
-});
+export default Data;

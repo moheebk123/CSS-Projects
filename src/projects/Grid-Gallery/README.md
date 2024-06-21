@@ -1,3 +1,3 @@
 # Grid-Gallery
 Simple grid gallery <br/>
-<img src="../assets/GitHub.webp" alt="Project Image" />
+<img src="./assets/Grid-Gallery.webp" alt="Project Image" />
