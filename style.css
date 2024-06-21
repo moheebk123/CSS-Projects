@@ -92,10 +92,11 @@ body {
         top: 100%;
         left: 0;
         padding: 1em;
-        background-color: #ffffffa9;
+        background-color: #ffffff5e;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        backdrop-filter: blur(5px);
         transition: top 0.5s ease;
 
         & .link-box {
