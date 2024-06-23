@@ -1,5 +1,7 @@
 const container = document.getElementById("container");
-const data = [
+const socialLinkBox = document.getElementById("social-link-box");
+
+const projects = [
   {
     title: "Contact-Form",
     description: "Simple contact form for user details.",
@@ -63,7 +65,25 @@ const data = [
   },
   {
     title: "Dashboard",
-    description: "User Dashboard panel for business to manage accounts. Build using Bootstrap.",
+    description:
+      "User Dashboard panel for business to manage accounts. Build using Bootstrap.",
+  },
+];
+const links = [
+  {
+    title: "Code",
+    link: "https://github.com/moheebk123/CSS-Projects",
+    alt: "Code Logo",
+  },
+  {
+    title: "GitHub",
+    link: "https://github.com/moheebk123",
+    alt: "GitHub Logo",
+  },
+  {
+    title: "LinkedIn",
+    link: "https://www.linkedin.com/in/moheebkhan/",
+    alt: "LinkedIn Logo",
   },
 ];
 
@@ -86,12 +106,35 @@ const cardHTML = (title, description, imgUrl, codeLink, liveLink) => {
 `;
 };
 
-data.forEach((cardData) => {
-  const title = cardData.title;
-  const description = cardData.description;
-  const imgUrl = `./assets/${cardData.title}.webp`;
-  const codeLink = `https://github.com/moheebk123/HTML-CSS-Projects/tree/main/${cardData.title}`;
-  const liveLink = `./${cardData.title}/`;
+const linkHTML = (title, link, imgUrl, alt) => {
+  return `<a
+      class="social-link"
+      href=${link}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src=${imgUrl}
+        class=${title === "LinkedIn" ? "linkedin-logo" : ""}
+        alt=${alt}
+      />
+      <span>${title}</span>
+    </a>
+`;
+}
+
+links.forEach((linkData) => {
+  const { title, link, alt } = linkData;
+  const imgUrl = `./assets/${title}.webp`;
+  const linkElement = linkHTML(title, link, imgUrl, alt);
+  socialLinkBox.insertAdjacentHTML("beforeend", linkElement);
+});
+
+projects.forEach((project) => {
+  const { title, description } = project
+  const imgUrl = `./assets/${title}.webp`;
+  const codeLink = `https://github.com/moheebk123/CSS-Projects/tree/main/projects/${title}`;
+  const liveLink = `./projects/${title}/`;
   const card = cardHTML(title, description, imgUrl, codeLink, liveLink);
   container.insertAdjacentHTML("beforeend", card);
 });
