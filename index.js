@@ -31,10 +31,6 @@ const projects = [
     description: "Image expand's when hover.",
   },
   {
-    title: "Video-in-Text",
-    description: "Background video in text.",
-  },
-  {
     title: "3D-List",
     description: "3D list with hover effect.",
   },
