@@ -15,6 +15,10 @@ body {
   background-repeat: no-repeat;
   overflow-x: hidden;
 
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   .container {
     position: relative;
     transform-style: preserve-3d;
