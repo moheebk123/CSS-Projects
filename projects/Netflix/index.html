@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-    <link
       rel="shortcut icon"
       href="./assets/netflix-icon.webp"
       type="image/x-icon"
@@ -23,9 +19,7 @@
 
       <div class="flex gap-2 text-white">
         <div class="language px-4 py-1 relative border rounded cursor-pointer">
-          <i class="fa-solid fa-globe text-sm"></i>
           <span class="selected mx-2">English</span>
-          <i class="fa-solid fa-caret-down"></i>
 
           <div
             class="option absolute t-[105%] cursor-pointer mt-3 text-center bg-white text-black rounded hidden"
@@ -39,7 +33,10 @@
           </div>
         </div>
 
-        <button class="bg-red-600 px-3 py-1 font-semibold rounded-md">
+        <button
+          type="button"
+          class="bg-red-600 px-3 py-1 font-semibold rounded-md"
+        >
           Sign In
         </button>
       </div>
@@ -75,7 +72,6 @@
           class="bg-red-600 px-5 py-2 font-semibold text-lg rounded-md w-[fit-content]"
         >
           Get Started
-          <i class="fa-solid fa-angle-right"></i>
         </button>
       </div>
     </section>
@@ -161,9 +157,9 @@
         </h1>
         <div class="accordian my-2" style="background: #333">
           <div
-            class="question cursor-pointer p-5 font-semibold text-lg flex justify-between items-center text-left hover:bg-zinc-600 lg:w-[90vw] lg:text-2xl"
+            class="question cursor-pointer p-5 font-semibold text-lg text-left hover:bg-zinc-600 lg:w-[90vw] lg:text-2xl"
           >
-            What is Netflix? <i class="fa-solid fa-plus"></i>
+            What is Netflix?
           </div>
           <div
             class="answer border-t-2 border-black font-semibold text-lg p-5 text-left max-h-0 hidden overflow-hidden"
@@ -178,9 +174,9 @@
         </div>
         <div class="accordian my-2" style="background: #333">
           <div
-            class="question cursor-pointer p-5 font-semibold text-lg flex justify-between items-center text-left hover:bg-zinc-600 lg:w-[90vw] lg:text-2xl"
+            class="question cursor-pointer p-5 font-semibold text-lg text-left hover:bg-zinc-600 lg:w-[90vw] lg:text-2xl"
           >
-            How much does Netflix cost? <i class="fa-solid fa-plus"></i>
+            How much does Netflix cost?
           </div>
           <div
             class="answer border-t-2 border-black font-semibold text-lg p-5 text-left max-h-0 hidden overflow-hidden"
@@ -192,9 +188,9 @@
         </div>
         <div class="accordian my-2" style="background: #333">
           <div
-            class="question cursor-pointer p-5 font-semibold text-lg flex justify-between items-center text-left hover:bg-zinc-600 lg:w-[90vw] lg:text-2xl"
+            class="question cursor-pointer p-5 font-semibold text-lg text-left hover:bg-zinc-600 lg:w-[90vw] lg:text-2xl"
           >
-            Where can I watch? <i class="fa-solid fa-plus"></i>
+            Where can I watch?
           </div>
           <div
             class="answer border-t-2 border-black font-semibold text-lg p-5 text-left max-h-0 hidden overflow-hidden"
@@ -212,9 +208,9 @@
 
         <div class="accordian my-2" style="background: #333">
           <div
-            class="question cursor-pointer p-5 w-[100%] font-semibold text-lg flex justify-between items-center text-left hover:bg-zinc-600 lg:w-[90vw] lg:text-2xl"
+            class="question cursor-pointer p-5 w-[100%] font-semibold text-lg text-left hover:bg-zinc-600 lg:w-[90vw] lg:text-2xl"
           >
-            How do I cancel? <i class="fa-solid fa-plus"></i>
+            How do I cancel?
           </div>
           <div
             class="answer border-t-2 border-black font-semibold text-lg p-5 text-left max-h-0 hidden overflow-hidden"
@@ -227,9 +223,9 @@
         </div>
         <div class="accordian my-2" style="background: #333">
           <div
-            class="question cursor-pointer p-5 w-[100%] font-semibold text-lg flex justify-between items-center text-left hover:bg-zinc-600 lg:w-[90vw] lg:text-2xl"
+            class="question cursor-pointer p-5 w-[100%] font-semibold text-lg text-left hover:bg-zinc-600 lg:w-[90vw] lg:text-2xl"
           >
-            What can I watch on Netflix? <i class="fa-solid fa-plus"></i>
+            What can I watch on Netflix?
           </div>
           <div
             class="answer border-t-2 border-black font-semibold text-lg p-5 text-left max-h-0 hidden overflow-hidden"
@@ -241,9 +237,9 @@
         </div>
         <div class="accordian my-2" style="background: #333">
           <div
-            class="question cursor-pointer p-5 w-[100%] font-semibold text-lg flex justify-between items-center text-left hover:bg-zinc-600 lg:w-[90vw] lg:text-2xl"
+            class="question cursor-pointer p-5 w-[100%] font-semibold text-lg text-left hover:bg-zinc-600 lg:w-[90vw] lg:text-2xl"
           >
-            Is Netflix good for kids? <i class="fa-solid fa-plus"></i>
+            Is Netflix good for kids?
           </div>
           <div
             class="answer border-t-2 border-black font-semibold text-lg p-5 text-left max-h-0 hidden overflow-hidden"
@@ -271,10 +267,10 @@
           />
 
           <button
+            type="button"
             class="bg-red-600 px-5 py-2 font-semibold text-lg rounded-md w-[fit-content]"
           >
             Get Started
-            <i class="fa-solid fa-angle-right"></i>
           </button>
         </div>
       </div>
@@ -323,10 +319,7 @@
         </div>
       </div>
       <div class="language px-4 py-1 relative border rounded cursor-pointer">
-        <i class="fa-solid fa-globe text-sm"></i>
         <span class="selected mx-2">English</span>
-        <i class="fa-solid fa-caret-down"></i>
-
         <div
           class="option absolute t-[105%] cursor-pointer mt-3 text-center bg-white text-black rounded hidden"
         >
@@ -340,52 +333,5 @@
       </div>
       <h3>Netflix India</h3>
     </footer>
-
-    <script src="https://kit.fontawesome.com/2c7db289f1.js" crossorigin="anonymous"></script>
-    <script>
-      const languages = document.querySelectorAll(".language");
-      const accordions = document.querySelectorAll(".accordion");
-      accordions.forEach((accordion) => {
-        const icon = accordion.querySelector("i");
-        const answer = accordion.querySelector(".answer");
-
-        accordion.addEventListener("click", () => {
-          if (
-            event.target.classList.contains("question") ||
-            event.target.classList.contains("fa-plus")
-          ) {
-            if (answer.style.display == "none") {
-              icon.style.transform = "rotate(45deg)";
-              answer.style.maxHeight = "fit-content";
-              answer.style.display = "block";
-            } else {
-              icon.style.transform = "rotate(0)";
-              answer.style.maxHeight = null;
-              answer.style.display = "none";
-            }
-          }
-        });
-      });
-
-      languages.forEach((language) => {
-        const option = language.querySelector(".option");
-        const selectedOption = language.querySelector(".selected");
-        const optionLanguage = option.querySelectorAll(".option-language");
-
-        optionLanguage.forEach((option) => {
-          option.addEventListener("click", () => {
-            selectedOption.innerText = option.innerText;
-          });
-        });
-
-        language.addEventListener("click", () => {
-          if (option.classList.contains("hidden")) {
-            option.classList.remove("hidden");
-          } else {
-            option.classList.add("hidden");
-          }
-        });
-      });
-    </script>
   </body>
 </html>
