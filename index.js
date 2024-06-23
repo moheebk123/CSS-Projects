@@ -60,6 +60,10 @@ const projects = [
     description: "Clone of UseabilityHub homepage.",
   },
   {
+    title: "Destinize",
+    description: "Homepage design for travel website.",
+  },
+  {
     title: "Netflix",
     description: "Clone of Netflix homepage. Build using TailwindCSS.",
   },
